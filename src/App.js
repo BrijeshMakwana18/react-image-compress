@@ -30,7 +30,16 @@ function App() {
         color: "white",
       }}
     >
-      <input type="file" id="file" multiple onChange={onFileChange} />
+      <input
+        style={{
+          height: "4vh",
+          width: "10vw",
+        }}
+        type="file"
+        id="file"
+        multiple
+        onChange={onFileChange}
+      />
       <p>{current}</p>
     </div>
   );
